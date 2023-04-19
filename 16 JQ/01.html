@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- JQ -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+<div class="d1">HELLOWORLD</div>
+<div class="d2">HELLOWORLD</div>
+<div id="d3">HELLOWORLD</div>
+<div class="d4">HELLOWORLD</div>
+
+<script>
+  //1 노트 탐색 
+  // JS
+  // const d1tg = document.querySelector(".d1");
+  // d1tg.style.backgroundColor="orange";
+  // // JQ 
+  // $('.d2').css('background-color','green').css('color','white');
+  // $('#d3').css('background-color','blue').css('color','white');
+
+  //2 노드 추가
+  // JS
+  const newd1 = document.createElement("div");
+  const d1tg = document.querySelector(".d1");
+  newd1.innerHTML="<h4>HELLO?????</h4>"
+  d1tg.append(newd1);
+
+  //JQ
+  $('.d2').append("<div>JQTEST</div>");
+
+  $('.d4').remove();
+
+</script>
+
+</body>
+</html>
